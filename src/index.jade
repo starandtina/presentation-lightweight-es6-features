@@ -1,0 +1,168 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title presentation-introduction-to-frontend
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        h1 Introduction to Lightweight ES6 Features
+
+      section
+        h2.bullet History of ECMAScript
+        ul
+          li Edition 1: June 1997
+          li Edition 2: June 1998
+          li Edition 3: December 1999 regular expressions, better string handling, new control statements, try/catch exception handling, tighter definition of errors, formatting for numeric output and other enhancements
+          li Edition 4: abandoned on July 2008
+          li Edition 5: December 2009 several enhancements to the standard library and even updated language semantics via a strict mode
+          li Edition 6: Stabilizing on June 18, 2015
+          li Edition 7: Work in progress `Async`, `Object.observe`, typed objects, SIMD, etc...
+
+      section
+        h2.bullet Terminology
+        ul
+          li ECMAScript
+          li ECMA-262
+          li ECMAScript 5
+          li ECMAScript.next
+          li ECMAScript Harmony
+          li Ecma Technical Committee 39(TC39)
+
+      section
+        h2 let + const
+
+      section
+        <a class="jsbin-embed" href="http://jsbin.com/loreza/1/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h3 Use Case
+        <a class="jsbin-embed" href="http://jsbin.com/modogu/1/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Default + Rest + Spread operator
+
+      section
+        <a class="jsbin-embed" href="http://jsbin.com/lerobe/1/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h3 Use Case
+        <a class="jsbin-embed" href="http://jsbin.com/fulupa/1/embed?js,console&height=420px"></a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Destructuring
+        p Extracting data from array or object using a syntax that mimics the structure of the array or object literal.
+
+      section
+        <a class="jsbin-embed" href="http://jsbin.com/ribuli/2/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Map + Set
+        ul
+          li Map: Whose keys can be arbitrary values
+          li Set: A set is in an ordered list of values that cannot contain duplicates
+
+      section
+        <a class="jsbin-embed" href="http://jsbin.com/xosoga/1/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        <a class="jsbin-embed" href="http://jsbin.com/yomoqi/2/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h3 Sets: Union + Interaction + Difference
+
+      section
+        <a class="jsbin-embed" href="http://jsbin.com/sopude/1/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Object literals
+        <a class="jsbin-embed" href="http://jsbin.com/vimapo/1/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Arrow functions
+        <a class="jsbin-embed" href="http://jsbin.com/matehi/1/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Class
+        <a class="jsbin-embed" href="http://jsbin.com/mixose/1/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Module
+        ul
+          li <a href="http://jsfiddle.net/starandtina/xdpvo024/">Revealing Module</a>
+          li <a href="http://jsfiddle.net/starandtina/4h7qoLL5/">Modern Module</a>
+          li <a href="http://wiki.commonjs.org/wiki/CommonJS">CommonJS</a>
+          li <a href="https://github.com/amdjs/amdjs-api/blob/master/AMD.md">AMD</a>
+          li <a href="https://github.com/ModuleLoader/es6-module-loader/wiki/Brief-Overview-of-ES6-Module-syntax">ES6 Module</a>
+
+      section
+        h2 Utility methods
+        pre.language-javascript
+          code.
+            Object.assign
+            Array.prototype.{findIndex/fill/entries/keys/values}
+            Array.from
+            Array.of
+            String.prototype.{startsWith/endsWith/includes/repeat}
+            String.prototype.{codePointAt/at}
+            String.fromCodePoint
+
+      section
+        <a class="jsbin-embed" href="http://jsbin.com/haqimu/2/embed?js&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Promise
+        p Promises are objects which represent the pending result of an asynchronous operation. 
+        <a class="jsbin-embed" href="http://jsbin.com/dafuf/1/embed?js&height=300px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h2 Generator
+        <a class="jsbin-embed" href="http://jsbin.com/ximazo/1/embed?js,console&height=420px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h3 Run-To-Completion
+        <a class="jsbin-embed" href="http://jsbin.com/mahevo/1/embed?js&height=300px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h3 Run-Stop-Run with Generators
+        ul
+          li function* and yield
+          li Generator & Generator function & Generator Iterator
+          li Cooperative & Preemptive
+          li two way communication
+
+      section
+        <a class="jsbin-embed" href="http://jsbin.com/pevubu/1/embed?js,console&height=300px">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+      section
+        h3 Async with Generators
+        h4 Sync looking + Async flow control
+        <a class="jsbin-embed" href="http://jsbin.com/vopojo/1/embed?js">JS Bin</a><script src="http://static.jsbin.com/js/embed.js&height=300px"></script>
+
+      section
+        h3 ES7 Async
+        h4 Directly supported by native syntax
+        <a class="jsbin-embed" href="http://jsbin.com/lokahe/1/embed?js">JS Bin</a><script src="http://static.jsbin.com/js/embed.js&height=300px"></script>
+
+      section
+        h2.bullet Just the beginning...
+        ul
+          li Proxies: used for interception, object virtualization, logging/profiling, etc...
+          li Symbols: a new primitive type
+          li More Math + Number + String + Object APIs
+          li Template Strings
+          li Tail Calls
+          li ...
+        br
+        ul
+          li Enjoy It! :)
+          li
+            a(href='http://weibo.com/starandtina', target='_blank') @starandtina
+
+    script(src='build/build.js')
